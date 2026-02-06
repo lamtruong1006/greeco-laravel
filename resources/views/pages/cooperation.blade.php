@@ -50,7 +50,7 @@
                             <i class="fa-solid fa-building"></i>
                         </div>
                         <div class="service-content">
-                            <h3>Hợp tác doanh nghiệp</h3>
+                            <h3>Hợp tác doanh nghiệp </h3>
                             <p>Phối hợp với doanh nghiệp trong các dự án Kiểm kê KNK, tư vấn ESG, phát triển tín chỉ carbon
                                 và chuyển đổi xanh.</p>
                         </div>
