@@ -13,8 +13,9 @@ services:
       composer install --no-dev --optimize-autoloader &&
       php artisan config:cache &&
       php artisan route:cache &&
-      php artisan view:cache
-    run_command: heroku-php-nginx -C docker/nginx.conf public/
+      php artisan view:cache &&
+      php artisan storage:link
+    run_command: heroku-php-apache2 public/
     http_port: 8080
     instance_count: 1
     instance_size_slug: basic-xxs
