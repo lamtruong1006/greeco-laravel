@@ -10,6 +10,7 @@ use App\Http\Controllers\ProjectController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\SitemapController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\DB;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,6 +22,30 @@ use Illuminate\Support\Facades\Route;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+// Health check - basic (for DigitalOcean health check)
+Route::get('/health', function () {
+    return response('OK', 200);
+});
+
+// Database check - kiểm tra database connection
+Route::get('/db-check', function () {
+    try {
+        DB::connection()->getPdo();
+        return response()->json([
+            'status' => 'ok',
+            'database' => 'connected',
+            'php_version' => phpversion(),
+            'laravel_version' => app()->version(),
+        ]);
+    } catch (\Exception $e) {
+        return response()->json([
+            'status' => 'error',
+            'database' => 'failed',
+            'message' => $e->getMessage(),
+        ], 500);
+    }
+});
 
 // Home
 Route::get('/', [HomeController::class, 'index'])->name('home');

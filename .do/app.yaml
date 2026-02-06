@@ -14,25 +14,16 @@ services:
       npm ci &&
       npm run build &&
       composer install --no-dev --optimize-autoloader
-    run_command: |
-      php artisan migrate --force &&
-      php artisan config:cache &&
-      php artisan route:cache &&
-      php artisan view:cache &&
-      php artisan storage:link &&
-      heroku-php-apache2 public/
+    run_command: heroku-php-apache2 public/
     http_port: 8080
     instance_count: 1
     instance_size_slug: basic-xxs
     routes:
       - path: /
     health_check:
-      http_path: /
-      initial_delay_seconds: 30
-      period_seconds: 10
-      timeout_seconds: 5
-      success_threshold: 1
-      failure_threshold: 3
+      http_path: /health
+      initial_delay_seconds: 60
+      period_seconds: 30
     envs:
       - key: APP_NAME
         value: "GREECO"
@@ -49,7 +40,7 @@ services:
       - key: LOG_CHANNEL
         value: "stderr"
       - key: LOG_LEVEL
-        value: "error"
+        value: "debug"
       - key: DB_CONNECTION
         value: "mysql"
       - key: DB_HOST
