@@ -5,14 +5,19 @@ name: greeco-laravel
 
 services:
   - name: web
-    dockerfile_path: Dockerfile
     github:
       repo: lamtruong1006/greeco-laravel
       branch: master
       deploy_on_push: true
+    build_command: |
+      composer install --no-dev --optimize-autoloader &&
+      php artisan config:cache &&
+      php artisan route:cache &&
+      php artisan view:cache
+    run_command: heroku-php-nginx -C docker/nginx.conf public/
     http_port: 8080
     instance_count: 1
-    instance_size_slug: basic-xxs # $5/month - có thể nâng cấp sau
+    instance_size_slug: basic-xxs
     routes:
       - path: /
     health_check:
