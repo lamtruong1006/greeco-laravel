@@ -1,6 +1,7 @@
 # Hướng dẫn Deploy lên DigitalOcean App Platform
 
 ## Yêu cầu
+
 - Tài khoản DigitalOcean
 - Code đã được push lên GitHub
 
@@ -9,15 +10,17 @@
 ### 1. Cập nhật file `.do/app.yaml`
 
 Mở file `.do/app.yaml` và thay đổi:
+
 ```yaml
 github:
-  repo: YOUR_GITHUB_USERNAME/greeco-laravel  # Thay bằng repo của bạn
-  branch: main
+    repo: lamtruong1006/greeco-laravel # Thay bằng repo của bạn
+    branch: main
 ```
 
 ### 2. Tạo App Key
 
 Chạy lệnh sau để sinh APP_KEY:
+
 ```bash
 php artisan key:generate --show
 ```
@@ -33,8 +36,8 @@ php artisan key:generate --show
 5. Chọn branch `main`
 6. DigitalOcean sẽ tự động phát hiện file `.do/app.yaml`
 7. Thiết lập **Environment Variables**:
-   - `APP_KEY`: (paste key từ bước 2)
-   - `APP_URL`: `https://your-app-name.ondigitalocean.app` (sẽ được cung cấp sau khi tạo)
+    - `APP_KEY`: (paste key từ bước 2)
+    - `APP_URL`: `https://your-app-name.ondigitalocean.app` (sẽ được cung cấp sau khi tạo)
 8. Click **Create Resources**
 
 #### Cách 2: Sử dụng doctl CLI
@@ -55,17 +58,17 @@ doctl apps create --spec .do/app.yaml
 1. Vào **Settings** → **Domains** để thêm domain riêng
 2. Kiểm tra **Runtime Logs** để xem lỗi nếu có
 3. Chạy migrations nếu chưa tự động:
-   ```bash
-   doctl apps console web --command="php artisan migrate"
-   ```
+    ```bash
+    doctl apps console web --command="php artisan migrate"
+    ```
 
 ## Chi phí ước tính
 
-| Service | Plan | Giá/tháng |
-|---------|------|-----------|
-| Web App | basic-xxs | $5 |
-| MySQL Database | db-s-1vcpu-1gb | $15 |
-| **Tổng** | | **$20/tháng** |
+| Service        | Plan           | Giá/tháng     |
+| -------------- | -------------- | ------------- |
+| Web App        | basic-xxs      | $5            |
+| MySQL Database | db-s-1vcpu-1gb | $15           |
+| **Tổng**       |                | **$20/tháng** |
 
 ## Tùy chọn tiết kiệm chi phí
 
@@ -76,14 +79,17 @@ doctl apps create --spec .do/app.yaml
 ## Troubleshooting
 
 ### Lỗi 502 Bad Gateway
+
 - Kiểm tra health check path trong app.yaml
 - Xem Runtime Logs
 
 ### Lỗi Database
-- Kiểm tra environment variables DB_*
+
+- Kiểm tra environment variables DB\_\*
 - Đảm bảo database đã được tạo và running
 
 ### Lỗi Storage/Upload
+
 - Chạy `php artisan storage:link`
 - Kiểm tra FILESYSTEM_DISK=public
 
