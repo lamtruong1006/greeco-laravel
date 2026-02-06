@@ -51,16 +51,18 @@ services:
       - key: DB_CONNECTION
         value: "mysql"
       - key: DB_HOST
-        value: "${db.HOSTNAME}"
+        value: "db-mysql-sgp1-lienquan-do-user-26785433-0.g.db.ondigitalocean.com"
       - key: DB_PORT
-        value: "${db.PORT}"
+        value: "25060"
       - key: DB_DATABASE
-        value: "${db.DATABASE}"
+        value: "greeco"
       - key: DB_USERNAME
-        value: "${db.USERNAME}"
+        value: "doadmin"
       - key: DB_PASSWORD
-        value: "${db.PASSWORD}"
+        value: "${DB_PASSWORD}"
         type: SECRET
+      - key: MYSQL_ATTR_SSL_CA
+        value: "/etc/ssl/certs/ca-certificates.crt"
       - key: CACHE_DRIVER
         value: "file"
       - key: SESSION_DRIVER
@@ -69,10 +71,3 @@ services:
         value: "sync"
       - key: FILESYSTEM_DISK
         value: "public"
-
-databases:
-  - name: db
-    engine: MYSQL
-    num_nodes: 1
-    size: db-s-1vcpu-1gb # $15/month - có thể dùng managed database bên ngoài
-    version: "8"
