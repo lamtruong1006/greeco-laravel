@@ -1,0 +1,15 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="25" cy="25" r="25" fill="#F6F8FB"/>
+<!-- Leaf icon -->
+<path d="M25 8C25 8 12 12 12 26C12 34 17 40 25 40C30 40 34 37 38 32C38 32 30 34 25 30C20 26 25 18 25 8Z" fill="url(#paint1_linear_loader)"/>
+<!-- Leaf stem -->
+<path d="M25 30V42" stroke="url(#paint1_linear_loader)" stroke-width="3" stroke-linecap="round"/>
+<!-- Small circle accent -->
+<circle cx="21" cy="20" r="2" fill="white" opacity="0.7"/>
+<defs>
+<linearGradient id="paint1_linear_loader" x1="12" y1="25" x2="38" y2="25" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1B7F3A"/>
+<stop offset="1" stop-color="#146530"/>
+</linearGradient>
+</defs>
+</svg>

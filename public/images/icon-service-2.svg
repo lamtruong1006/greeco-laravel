@@ -1,0 +1,13 @@
+<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="40.5" cy="40.5" r="38" stroke="url(#grad2)" stroke-width="3" fill="none"/>
+<rect x="25" y="35" width="30" height="25" rx="2" fill="url(#grad2)"/>
+<path d="M30 30V35H50V30" stroke="url(#grad2)" stroke-width="2" fill="none"/>
+<text x="40.5" y="52" text-anchor="middle" fill="white" font-size="14" font-weight="bold">CO₂</text>
+<path d="M55 25L60 20M25 25L20 20M40 18V13" stroke="url(#grad2)" stroke-width="2"/>
+<defs>
+<linearGradient id="grad2" x1="0" y1="40" x2="81" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2E7D32"/>
+<stop offset="1" stop-color="#4CAF50"/>
+</linearGradient>
+</defs>
+</svg>

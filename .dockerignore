@@ -1,0 +1,46 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# IDE
+.idea
+.vscode
+*.swp
+
+# Node
+node_modules
+
+# Laravel
+.env
+.env.local
+.env.*.local
+storage/logs/*
+storage/framework/cache/*
+storage/framework/sessions/*
+storage/framework/views/*
+
+# Testing
+tests
+phpunit.xml
+.phpunit.result.cache
+
+# Documentation
+*.md
+docs
+
+# Build files
+Dockerfile
+docker-compose*.yml
+.dockerignore
+.do
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Misc
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

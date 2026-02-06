@@ -1,0 +1,21 @@
+<svg width="168" height="168" viewBox="0 0 168 168" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="84.1439" cy="83.9108" r="83.7547" fill="url(#paint0_linear_env)"/>
+<text x="50%" y="30%" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial, sans-serif" transform="rotate(-15 84 84)">TƯ VẤN</text>
+<text x="50%" y="42%" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial, sans-serif" transform="rotate(15 84 84)">MÔI TRƯỜNG</text>
+<text x="50%" y="85%" text-anchor="middle" fill="white" font-size="10" font-weight="bold" font-family="Arial, sans-serif" transform="rotate(15 84 84)">GREECO</text>
+<circle cx="84.1436" cy="83.9107" r="49.4561" fill="white"/>
+<!-- Leaf icon -->
+<g transform="translate(59, 58)">
+  <path d="M25 5C25 5 30 15 30 25C30 35 25 45 25 45C25 45 20 35 20 25C20 15 25 5 25 5Z" fill="#2E7D32"/>
+  <path d="M25 5C35 10 45 20 45 30C45 40 35 45 25 45" stroke="#2E7D32" stroke-width="3" fill="none"/>
+  <path d="M25 5C15 10 5 20 5 30C5 40 15 45 25 45" stroke="#2E7D32" stroke-width="3" fill="none"/>
+  <path d="M25 20V45" stroke="#2E7D32" stroke-width="2"/>
+  <path d="M18 28L25 35L32 28" stroke="#2E7D32" stroke-width="2" fill="none"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_env" x1="2.10754" y1="82.6317" x2="166.18" y2="83.067" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2E7D32"/>
+<stop offset="1" stop-color="#4CAF50"/>
+</linearGradient>
+</defs>
+</svg>

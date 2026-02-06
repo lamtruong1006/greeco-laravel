@@ -1,0 +1,19 @@
+<svg width="50" height="51" viewBox="0 0 50 51" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<linearGradient id="paint0_linear_env_doc" x1="5" y1="25.5" x2="45" y2="25.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1B7F3A"/>
+<stop offset="1" stop-color="#146530"/>
+</linearGradient>
+</defs>
+<!-- Document base -->
+<path d="M12 5.5H32L40 13.5V43.5C40 44.6046 39.1046 45.5 38 45.5H12C10.8954 45.5 10 44.6046 10 43.5V7.5C10 6.39543 10.8954 5.5 12 5.5Z" stroke="url(#paint0_linear_env_doc)" stroke-width="2.5" fill="none"/>
+<!-- Document fold -->
+<path d="M32 5.5V11.5C32 12.6046 32.8954 13.5 34 13.5H40" stroke="url(#paint0_linear_env_doc)" stroke-width="2.5" fill="none"/>
+<!-- Leaf icon on document -->
+<path d="M25 22.5C25 22.5 18 24.5 18 31.5C18 35.5 20.5 38.5 25 38.5C28 38.5 30 36.5 32 33.5C32 33.5 28 34.5 25 32.5C22 30.5 25 26.5 25 22.5Z" fill="url(#paint0_linear_env_doc)"/>
+<!-- Leaf stem -->
+<path d="M25 32.5V38.5" stroke="url(#paint0_linear_env_doc)" stroke-width="2" stroke-linecap="round"/>
+<!-- Document lines -->
+<path d="M15 18.5H22" stroke="url(#paint0_linear_env_doc)" stroke-width="2" stroke-linecap="round"/>
+<path d="M15 23.5H20" stroke="url(#paint0_linear_env_doc)" stroke-width="2" stroke-linecap="round"/>
+</svg>

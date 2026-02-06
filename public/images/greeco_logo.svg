@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+  <defs>
+    <style>
+      .text {
+        font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 700;
+        font-size: 64px;
+        fill: #0f4c81; /* Academic Blue */
+        letter-spacing: 2px;
+      }
+      .book {
+        fill: #0f4c81; /* Same Blue for consistency and balance */
+      }
+      .leaf {
+        fill: #4caf50; /* Fresh Green */
+      }
+    </style>
+  </defs>
+
+  <!-- Logo Group -->
+  <g transform="translate(10, 10)">
+    <!-- Icon (100x100 space) -->
+    
+    <!-- Left Page -->
+    <!-- d: Move to spine-bottom, Curve to left-bottom, Line to left-top, Curve to spine-top -->
+    <path class="book" d="M 55 85 Q 30 95 10 75 L 10 35 Q 30 55 55 45 Z" />
+    
+    <!-- Right Page -->
+    <!-- d: Move to spine-bottom, Curve to right-bottom, Line to right-top, Curve to spine-top -->
+    <path class="book" d="M 65 85 Q 90 95 110 75 L 110 35 Q 90 55 65 45 Z" />
+
+    <!-- Leaf (Rising from the center/spine area) -->
+    <!-- Simple fresh leaf shape pointing up-right slightly for dynamic feel -->
+    <!-- Stem starts at 60,45 (approx center of top spine gap) -->
+    <path class="leaf" d="M 60 45 Q 40 25 60 5 Q 90 15 60 45 Z" />
+    
+  </g>
+
+  <!-- Text -->
+  <text x="130" y="85" class="text">GREECO</text>
+
+</svg>

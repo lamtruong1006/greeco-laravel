@@ -1,0 +1,13 @@
+<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="40.5" cy="40.5" r="38" stroke="url(#grad1)" stroke-width="3" fill="none"/>
+<path d="M40.5 15C40.5 15 55 28 55 42C55 52 48 60 40.5 60C33 60 26 52 26 42C26 28 40.5 15 40.5 15Z" fill="url(#grad1)"/>
+<path d="M40.5 25V55" stroke="white" stroke-width="2"/>
+<path d="M33 35L40.5 42L48 35" stroke="white" stroke-width="2" fill="none"/>
+<path d="M35 45L40.5 50L46 45" stroke="white" stroke-width="2" fill="none"/>
+<defs>
+<linearGradient id="grad1" x1="0" y1="40" x2="81" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2E7D32"/>
+<stop offset="1" stop-color="#4CAF50"/>
+</linearGradient>
+</defs>
+</svg>

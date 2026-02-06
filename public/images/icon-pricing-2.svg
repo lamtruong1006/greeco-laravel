@@ -1,0 +1,14 @@
+<svg width="81" height="81" viewBox="0 0 81 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="40.5" cy="40.5" r="38" stroke="url(#price2)" stroke-width="3" fill="none"/>
+<path d="M32 55V35C32 35 32 25 40.5 18C49 25 49 35 49 35V55" stroke="url(#price2)" stroke-width="2" fill="none"/>
+<path d="M40.5 18V55" stroke="url(#price2)" stroke-width="2"/>
+<path d="M32 35C32 35 37 30 40.5 30C44 30 49 35 49 35" stroke="url(#price2)" stroke-width="2" fill="none"/>
+<path d="M32 45C32 45 37 40 40.5 40C44 40 49 45 49 45" stroke="url(#price2)" stroke-width="2" fill="none"/>
+<rect x="24" y="55" width="33" height="8" rx="2" fill="url(#price2)"/>
+<defs>
+<linearGradient id="price2" x1="0" y1="40" x2="81" y2="40" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2E7D32"/>
+<stop offset="1" stop-color="#4CAF50"/>
+</linearGradient>
+</defs>
+</svg>

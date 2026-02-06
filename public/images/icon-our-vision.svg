@@ -1,0 +1,12 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="25" cy="25" r="23" stroke="url(#vis)" stroke-width="2" fill="none"/>
+<circle cx="25" cy="25" r="15" stroke="url(#vis)" stroke-width="2" fill="none"/>
+<circle cx="25" cy="25" r="8" fill="url(#vis)"/>
+<path d="M25 5V12M25 38V45M5 25H12M38 25H45" stroke="url(#vis)" stroke-width="2"/>
+<defs>
+<linearGradient id="vis" x1="0" y1="25" x2="50" y2="25" gradientUnits="userSpaceOnUse">
+<stop stop-color="#2E7D32"/>
+<stop offset="1" stop-color="#4CAF50"/>
+</linearGradient>
+</defs>
+</svg>
