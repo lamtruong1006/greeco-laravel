@@ -32,7 +32,7 @@ services:
       - key: APP_DEBUG
         value: "true"
       - key: APP_URL
-        value: "${APP_URL}"
+        value: "https://plankton-app-wnj8l.ondigitalocean.app"
         scope: RUN_AND_BUILD_TIME
       - key: APP_KEY
         value: "${APP_KEY}"
