@@ -9,7 +9,10 @@ services:
       repo: lamtruong1006/greeco-laravel
       branch: master
       deploy_on_push: true
+    environment_slug: php
     build_command: |
+      npm ci &&
+      npm run build &&
       composer install --no-dev --optimize-autoloader &&
       php artisan config:cache &&
       php artisan route:cache &&
